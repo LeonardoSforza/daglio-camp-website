@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO: All of these meta tags -->
+    <meta name="description" content="Your website description here">
+    <meta name="keywords" content="your, keywords, here">
+    <meta name="author" content="Your Name">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Your Website Title">
+    <meta property="og:description" content="Your website description here">
+    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:url" content="your-website-url">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Daglio Camp</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS (Optional) -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/button-reset.css">
+    <link rel="stylesheet" href="./css/web-container.css">
+    <link rel="stylesheet" href="./css/flex.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-xxl">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Daglio Camp
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#announcements">Announcements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-main" href="#events">Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav -->
+
+    <div id="web-container">
+        <!-- <img src="./assets/logo-background.svg" alt="" id="background-img-1">
+        <img src="./assets/logo-background.svg" alt="" id="background-img-2"> -->
+        <!-- Hero Section -->
+        <section>
+            <div id="hero-card">
+                <img src="./assets/logo-hero.svg" alt="logo">
+                <h1>Daglio Camp</h1>
+            </div>
+        </section>
+        <!-- End Hero Section -->
+        <!-- Events -->
+        <section id="events" class="flex-all-center flex-column gap-xxx-large">
+            <h2>Events</h2>
+            <div class="event-tile-container wrap">
+                <div class="event-tile">
+                    <div class="event-tile-header">
+                        <span class="event-tile-date">30 July - 06 August</span>
+                        <div class="event-tile-background"></div>
+                    </div>
+                    <div class="event-tile-content">
+                        <div class="event-tile-title-section">
+                            <h3 class="event-tile-title">Children's Camp</h3>
+                            <span class="tag event-tile-age-restriction">ages 8 - 17</span>
+                        </div>
+                        <p class="event-tile-body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="event-tile-buttons">
+                        <a href="./pages/childrens-camp-1/childrens-camp-1.html"><button class="btn btn-secondary">See details</button></a>
+                        <a href="./pages/childrens-camp-1/childrens-camp-1-reg.html"><button class="btn btn-primary">Sign up</button></a>
+                    </div>
+                </div>
+                <div class="event-tile">
+                    <div class="event-tile-header">
+                        <span class="event-tile-date">02 August - 07 August</span>
+                        <div class="event-tile-background"></div>
+                    </div>
+                    <div class="event-tile-content">
+                        <div class="event-tile-title-section">
+                            <h3 class="event-tile-title">Children's Camp #2</h3>
+                            <span class="tag event-tile-age-restriction">age 16+</span>
+                        </div>
+                        <p class="event-tile-body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="event-tile-buttons">
+                        <button class="btn btn-secondary">See details</button>
+                        <button class="btn btn-primary">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Events -->
+        <!-- Vision of Daglio -->
+        <section id="vision-of-daglio">
+            <div id="vision-of-daglio-container">
+                <div id="vision-of-daglio-text-container">
+                    <div id="vision-of-daglio-title-container">
+                        <span>The Vision of</span>
+                        <h2>Daglio Camp</h2>
+                    </div>
+                    <p>To the Yuvas, parents, aunties and uncles,
+                        The aim of the camp is to offer children the opportunity to live a yogi lifestyle, where
+                        they
+                        feel totally accepted for who they are, as beautiful young, realized souls. </p>
+                </div>
+                <div id="vision-of-daglio-image-container"></div>
+            </div>
+            <div id="join-the-vision-card">
+                <div id="join-the-vision-card-img"></div>
+                <div id="join-the-vision-card-content">
+                    <div id="join-the-vision-card-text">
+                        <h3>Join the vision</h3>
+                        <p>The camp is only as good as the activities we can offer! Would you like to be part of the
+                            experience and give the children the experience of a lifetime? We need:</p>
+                    </div>
+                    <div id="join-the-vision-activities-container">
+                        <div class="join-the-vision-activity">
+                            <h4>Volunteers to offer great activities:</h4>
+                            <div class="join-the-vision-activity-tags-container">
+                                <span class="activity-tag">Arts</span>
+                                <span class="activity-tag">Sport</span>
+                                <span class="activity-tag">Music</span>
+                                <span class="activity-tag">+ more</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="join-the-vision-activity">
+                            <h4>Yogis/nis with qualifications in:</h4>
+                            <div class="join-the-vision-activity-tags-container">
+                                <span class="activity-tag">Teaching</span>
+                                <span class="activity-tag">Pedagogy</span>
+                                <span class="activity-tag">Child psychology</span>
+                            </div>
+                            <p>*there needs to be one qualified person per 10 children</p>
+                        </div>
+                        <hr>
+                        <div class="join-the-vision-activity">
+                            <h4>A medical volunteer qualified as one of the following:</h4>
+                            <div class="join-the-vision-activity-tags-container">
+                                <span class="activity-tag">Nurse</span>
+                                <span class="activity-tag">Doctor</span>
+                                <span class="activity-tag">Trained first aider</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="join-the-vision-info-container">
+                        <p>Please get in touch at</p>
+                        <button href="mailto:info@dagliocamp.com" class="btn btn-primary">info@dagliocamp.com</button>
+                    </div>
+                </div>
+            </div>
+            <p id="join-the-vision-quote">
+                “We in Daglio are family. We take care of each other, live and breath together, share meditations,
+                share
+                chores, laughter and forever friendships.”
+            </p>
+        </section>
+        <!-- End Vision of Daglio -->
+        <!-- Announcements -->
+        <section id="announcements">
+            <div class="flex-all-center flex-column gap-x-large">
+                <h2>Important Announcements</h2>
+                <div class="flex-all-center gap-small">
+                    <button class="flex-all-center announcement-btn active">View all</button>
+                    <button class="flex-all-center announcement-btn">Childrens Camp</button>
+                    <button class="flex-all-center announcement-btn">Childrens Camp</button>
+                </div>
+            </div>
+            <div class="flex-all-center flex-column gap-large">
+                <div class="announcement-card">
+                    <div class="announcement-card-date">
+                        <span>Aug 06 2025</span>
+                    </div>
+                    <div class="announcement-card-content">
+                        <div class="announcement-card-text">
+                            <h3>There are three places left!</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div class="announcement-tags wrap">
+                            <span class="announcement-tag">Yuva Work Camp</span>
+                            <span class="announcement-tag">Volunteers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="announcement-card">
+                    <div class="announcement-card-date">
+                        <span>Jul 30 2025</span>
+                    </div>
+                    <div class="announcement-card-content">
+                        <div class="announcement-card-text">
+                            <h3>Only those who received a message have a place in the camp</h3>
+                            <p>Hi everyone, IMPORTANT MESSAGE about the children's camp. ONLY THOSE WHO HAVE RECEIVED A
+                                MESSAGE HAVE A PLACE IN THE CAMP. If you haven't been contacted by the organisers it
+                                means you/your children do not have a place and have been placed on the waiting list.
+                                Apologies about the confusion from the “Who's coming” list, which unfortunately shows
+                                everyone who has registered as coming.</p>
+                        </div>
+                        <div class="announcement-tags wrap">
+                            <span class="announcement-tag">Yuva Work Camp</span>
+                            <span class="announcement-tag">Volunteers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Announcements -->
+    </div>
+
+
+    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript (Optional) -->
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

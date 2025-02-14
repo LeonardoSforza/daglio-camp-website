@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO: All of these meta tags -->
+    <meta name="description" content="Your website description here">
+    <meta name="keywords" content="your, keywords, here">
+    <meta name="author" content="Your Name">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Your Website Title">
+    <meta property="og:description" content="Your website description here">
+    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:url" content="your-website-url">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Daglio Camp</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS (Optional) -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/button-reset.css">
+    <link rel="stylesheet" href="../../css/web-container.css">
+    <link rel="stylesheet" href="../../css/flex.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/camps.css">
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-xxl">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/logo.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Daglio Camp
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html#announcements">Announcements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-main" href="../../index.html#events">Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav -->
+    <div id="web-container">
+        <!-- Camp Info -->
+        <section class="flex-all-center gap-xxx-large">
+            <div id="camp-img"></div>
+            <div id="camp-info">
+                <span id="camp-info-date">30 July - 06 August</span>
+                <div class="flex flex-align-center flex-justify-start gap-large">
+                    <h1 id="camp-info-title">Children's Camp 1</h1>
+                    <span id="camp-info-age" class="tag event-tile-age-restriction">age 18+</span>
+                </div>
+                <p id="camp-info-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </section>
+        <!-- End Camp Info -->
+        <!-- Camp Content Card -->
+        <section id="camp-content">
+            <div id="camp-content-card">
+                <div id="camp-content-nav" class="flex-all-center">
+                    <button class="flex-all-center camp-content-nav-button active">
+                        <a href="">Info for parents</a>
+                    </button>
+                    <button class="flex-all-center camp-content-nav-button">
+                        <a href="">Info for volunteers</a>
+                    </button>
+                </div>
+                <!-- Info for Parents -->
+                <div id="info-for-parents">
+                    <div class="info-block">
+                        <h2>Costs & payment details</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="info-block">
+                        <h2>What to bring/what not to bring</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="info-block">
+                        <h2>Required documents</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="info-button-container">
+                        <button class="btn btn-primary">
+                            <a href="./childrens-camp-1-reg.html">Sign up for parents</a>
+                        </button>
+                    </div>
+                </div>
+                <!-- End Info for Parents -->
+                <!-- Info for Children -->
+                <div id="info-for-volunteers">
+                </div>
+                <!-- End Info for Children -->
+            </div>
+        </section>
+        <!-- End Camp Content Card -->
+    </div>
+</body>

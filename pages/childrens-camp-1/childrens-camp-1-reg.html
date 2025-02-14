@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO: All of these meta tags -->
+    <meta name="description" content="Your website description here">
+    <meta name="keywords" content="your, keywords, here">
+    <meta name="author" content="Your Name">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Your Website Title">
+    <meta property="og:description" content="Your website description here">
+    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:url" content="your-website-url">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Daglio Camp</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS (Optional) -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/button-reset.css">
+    <link rel="stylesheet" href="../../css/web-container.css">
+    <link rel="stylesheet" href="../../css/flex.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/camps.css">
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-xxl">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/logo.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Daglio Camp
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Announcements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-main" href="../../index.html">Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav -->
+    <div id="web-container">
+        <!-- Camp Info -->
+        <section class="flex-all-center gap-xxx-large">
+            <div id="camp-img"></div>
+            <div id="camp-info">
+                <span id="camp-info-date">30 July - 06 August</span>
+                <div class="flex flex-align-center flex-justify-start gap-large">
+                    <h1 id="camp-info-title">Children's Camp 1</h1>
+                    <span id="camp-info-age" class="tag event-tile-age-restriction">age 18+</span>
+                </div>
+                <p id="camp-info-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </section>
+        <!-- End Camp Info -->
+        <!-- Camp Content Card -->
+        <section id="camp-content">
+            <div id="camp-content-card">
+                <div id="camp-content-nav" class="flex-all-center">
+                    <button class="flex-all-center camp-content-nav-button active">
+                        <a href="">Registration for parents</a>
+                    </button>
+                    <button class="flex-all-center camp-content-nav-button">
+                        <a href="./childrens-camp-1-reg-volunteer.html">Registration for volunteers</a>
+                    </button>
+                </div>
+                <div class="container">
+                    <h2>Registration Form</h2>
+                    <form id="registrationForm" action="#" method="POST" enctype="multipart/form-data"
+                        class="needs-validation" novalidate="">
+
+                        <div class="mb-3">
+                            <label for="first_name" class="form-label">First Name (as on your ID or passport)</label>
+                            <input type="text" class="form-control" id="first_name" name="first_name" required
+                                minlength="2">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="sahaj_name" class="form-label">Sahaj or Nickname (if different than First
+                                Name)</label>
+                            <input type="text" class="form-control" id="sahaj_name" name="sahaj_name">
+                            <p class="form-text">Only fill in the above field if you want this name to be used during
+                                the camp instead of
+                                the legal first name</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="last_name" class="form-label">Last Name (Surname)</label>
+                            <input type="text" class="form-control" id="last_name" name="last_name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="gender" class="form-label">Gender</label>
+                            <select class="form-select" id="gender" name="gender" required>
+                                <option selected value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="birth_date" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" id="birth_date" name="birth_date" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="country_residence" class="form-label">Country of residence</label>
+                            <select class="form-select" id="country_residence" name="camp" required>
+                                <option value="Albania" data-calc-value="Albania">
+                                    Albania </option>
+                                <option value="Andorra" data-calc-value="Andorra">
+                                    Andorra </option>
+                                <option value="Argentina" data-calc-value="Argentina">
+                                    Argentina </option>
+                                <option value="Australia" data-calc-value="Australia">
+                                    Australia </option>
+                                <option value="Austria" data-calc-value="Austria">
+                                    Austria </option>
+                                <option value="Belarus" data-calc-value="Belarus">
+                                    Belarus </option>
+                                <option value="Belgium" data-calc-value="Belgium">
+                                    Belgium </option>
+                                <option value="Bolivia" data-calc-value="Bolivia">
+                                    Bolivia </option>
+                                <option value="Brazil" data-calc-value="Brazil">
+                                    Brazil </option>
+                                <option value="Bulgaria" data-calc-value="Bulgaria">
+                                    Bulgaria </option>
+                                <option value="Canada" data-calc-value="Canada">
+                                    Canada </option>
+                                <option value="China" data-calc-value="China">
+                                    China </option>
+                                <option value="Columbia" data-calc-value="Columbia">
+                                    Columbia </option>
+                                <option value="Croatia" data-calc-value="Croatia">
+                                    Croatia </option>
+                                <option value="Cyprus" data-calc-value="Cyprus">
+                                    Cyprus </option>
+                                <option value="Czechia" data-calc-value="Czechia">
+                                    Czechia </option>
+                                <option value="Denmark" data-calc-value="Denmark">
+                                    Denmark </option>
+                                <option value="Egypt" data-calc-value="Egypt">
+                                    Egypt </option>
+                                <option value="Estonia" data-calc-value="Estonia">
+                                    Estonia </option>
+                                <option value="Finland" data-calc-value="Finland">
+                                    Finland </option>
+                                <option value="France" data-calc-value="France">
+                                    France </option>
+                                <option value="Germany" data-calc-value="Germany">
+                                    Germany </option>
+                                <option value="Greece" data-calc-value="Greece">
+                                    Greece </option>
+                                <option value="Hong Kong" data-calc-value="Hong Kong">
+                                    Hong Kong </option>
+                                <option value="Hungary" data-calc-value="Hungary">
+                                    Hungary </option>
+                                <option value="Iceland" data-calc-value="Iceland">
+                                    Iceland </option>
+                                <option value="India" data-calc-value="India">
+                                    India </option>
+                                <option value="Iran" data-calc-value="Iran">
+                                    Iran </option>
+                                <option value="Ireland" data-calc-value="Ireland">
+                                    Ireland </option>
+                                <option value="Israel" data-calc-value="Israel">
+                                    Israel </option>
+                                <option value="Italy" data-calc-value="Italy">
+                                    Italy </option>
+                                <option value="Japan" data-calc-value="Japan">
+                                    Japan </option>
+                                <option value="Korea, South" data-calc-value="Korea, South">
+                                    Korea, South </option>
+                                <option value="Lithuania" data-calc-value="Lithuania">
+                                    Lithuania </option>
+                                <option value="Luxembourg" data-calc-value="Luxembourg">
+                                    Luxembourg </option>
+                                <option value="Malaysia" data-calc-value="Malaysia">
+                                    Malaysia </option>
+                                <option value="Nepal" data-calc-value="Nepal">
+                                    Nepal </option>
+                                <option value="Netherlands" data-calc-value="Netherlands">
+                                    Netherlands </option>
+                                <option value="Norway" data-calc-value="Norway">
+                                    Norway </option>
+                                <option value="Poland" data-calc-value="Poland">
+                                    Poland </option>
+                                <option value="Portugal" data-calc-value="Portugal">
+                                    Portugal </option>
+                                <option value="Romania" data-calc-value="Romania">
+                                    Romania </option>
+                                <option value="Russia" data-calc-value="Russia">
+                                    Russia </option>
+                                <option value="Serbia" data-calc-value="Serbia">
+                                    Serbia </option>
+                                <option value="Slovakia" data-calc-value="Slovakia">
+                                    Slovakia </option>
+                                <option value="Slovenia" data-calc-value="Slovenia">
+                                    Slovenia </option>
+                                <option value="South Africa" data-calc-value="South Africa">
+                                    South Africa </option>
+                                <option value="Spain" data-calc-value="Spain">
+                                    Spain </option>
+                                <option value="Sweden" data-calc-value="Sweden">
+                                    Sweden </option>
+                                <option value="Switzerland" data-calc-value="Switzerland">
+                                    Switzerland </option>
+                                <option value="Taiwan" data-calc-value="Taiwan">
+                                    Taiwan </option>
+                                <option value="Turkey" data-calc-value="Turkey">
+                                    Turkey </option>
+                                <option value="Ukraine" data-calc-value="Ukraine">
+                                    Ukraine </option>
+                                <option value="UK-England" data-calc-value="UK-England">
+                                    UK-England </option>
+                                <option value="UK-Northern Ireland" data-calc-value="UK-Northern Ireland">
+                                    UK-Northern Ireland </option>
+                                <option value="UK-Scotland" data-calc-value="UK-Scotland">
+                                    UK-Scotland </option>
+                                <option value="UK-Wales" data-calc-value="UK-Wales">
+                                    UK-Wales </option>
+                                <option value="USA" data-calc-value="USA">
+                                    USA </option>
+                                <option value="Other (please specify in Comments)"
+                                    data-calc-value="Other (please specify in Comments)">
+                                    Other (please specify in Comments) </option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="place_of_birth" class="form-label">Place of birth (format: City,
+                                Country)</label>
+                            <input type="text" class="form-control" id="place_of_birth" name="place_of_birth" required>
+                        </div>
+
+                        <!-- Email address -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <!-- Arrival date exception -->
+                        <div class="mb-3">
+                            <label for="arrival_date_exception" class="form-label">Arrival date exception</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="arrival_date_exception">
+                                <label class="form-check-label" for="gridCheck">I want to arrive at a different
+                                    date</label>
+                                <!-- If you click should show next input -->
+                            </div>
+                        </div>
+
+                        <div class="mb-3"> <!-- Should be hidden -->
+                            <label for="arrival_date" class="form-label">Alternate arrival date</label>
+                            <input type="date" class="form-control" id="arrival_date" name="arrival_arrival_date" required>
+                        </div>
+
+                        <!-- Departure date exception -->
+                        <div class="mb-3">
+                            <label for="departure_date_exception" class="form-label">Departure date exception</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="departure_date_exception">
+                                <label class="form-check-label" for="gridCheck">I want to leave at a different
+                                    date</label>
+                                <!-- If you click should show next input -->
+                            </div>
+                        </div>
+
+                        <div class="mb-3"> <!-- Should be hidden -->
+                            <label for="departure_date" class="form-label">Alternate arrival date</label>
+                            <input type="date" class="form-control" id="departure_date" name="departure_date" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="dietary_restrictions" class="form-label">Dietary needs and/or allergies</label>
+                            <input type="text" class="form-control" id="dietary_restrictions"
+                                name="dietary_restrictions">
+                            <p class="form-text">Food: We make sure the food on the camp is tasty and nutritious, with
+                                menus approved by an
+                                official nutritionist. If your child has major dietary requirements (which need
+                                ingredients not easily found
+                                in the area; or separate cooking effort) then we request the parents to work with the
+                                camp admins to find the
+                                best solution.</p>
+                            <p class="form-text">Health: Please list any recent health issues which could be of
+                                relevance.</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <label>Have you ever joined a Daglio children camp before?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="daglio_camp_before"
+                                    id="daglio_camp_before_yes" value="yes">
+                                <label class="form-check-label" for="daglio_camp_before_yes">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="daglio_camp_before"
+                                    id="daglio_camp_before_no" value="no" checked>
+                                <label class="form-check-label" for="daglio_camp_before_no">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="form-group">
+                                <label for="comments">Comments (for Children: any info on their background, character,
+                                    special interests and
+                                    talents etc.; for Volunteers: What are you going to do?)</label>
+                                <textarea class="form-control" id="comments" rows="3"></textarea>
+                                <p class="form-text">Should there be any delicate aspect relating to the personality of
+                                    your child that you
+                                    wish to keep confidential, but which the head organisers would benefit from being
+                                    aware of, please feel free
+                                    to send us a separate email, or bring it up in person with one of us at the
+                                    Registration Desk. We very much
+                                    welcome you sharing such information, we encourage and need your collaboration to
+                                    create a beneficial camp
+                                    environment for your child where they are nurtured and their wellbeing supported.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="mb-3">
+                            <div class="form-group">
+                                <label for="haccp">HACCP Document</label>
+                                <input type="file" class="form-control" id="haccp" name="haccp">
+                            </div>
+                        </div> -->
+
+                        <hr class="hr" />
+
+                        <p class="form-text">
+                            Receipt info (needed to produce a receipt of your payment; if you are not sure who will pay,
+                            please give details
+                            of the most likely person; you can amend it later on by writing to info@dagliocamp.com)
+                        </p>
+
+                        <div class="mb-3">
+                            <label for="" class="form-label">Privacy information:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="privacy_information" required>
+                                <label class="form-check-label" for="privacy_information">
+                                    I have read the privacy policy and consent to the processing of the information
+                                    provided here, pursuant to
+                                    articles 13-14 of the EU Reg. 2016/679.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="" class="form-label">Share contact details (optional)</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="share_contact_details">
+                                <label class="form-check-label" for="share_contact_details">
+                                    I agree that - after the camp - my name, country and email address can be shared
+                                    with other volunteers
+                                    attending the camp
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="" class="form-label">Can your child swim</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="siwm">
+                                <label class="form-check-label" for="siwm">
+                                    Yes, my child can swim (don't check this box if they can't swim)
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="" class="form-label">Camping on the mountain (optional and only applicable to
+                                children age
+                                10+)</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="2_day_hike">
+                                <label class="form-check-label" for="2_day_hike">
+                                    In the event of a 2-day hike, I allow my child to sleep outside on the mountain
+                                    (tents are provided by the
+                                    camp) - if you don't select this checkbox, your child will not be allowed on the
+                                    2-day walk
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="" class="form-label">View and share pictures after the camp (optional)</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="private_share_picture">
+                                <label class="form-check-label" for="private_share_picture">
+                                    I want to see pictures of the camp and I agree that pictures of my child (or myself
+                                    in case of volunteers)
+                                    can be shared privatly after the camp with volunteers and other parents of children
+                                    on the camp
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="" class="form-label">Share pictures for promotional reasons on the daglio
+                                website (optional)</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="share_pictures">
+                                <label class="form-check-label" for="share_pictures">
+                                    I agree that pictures of my child (or myself in case of volunteers) can be used for
+                                    promotional reasons on
+                                    the daglio website
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <div id="responseMessage"></div>
+                </div>
+
+                <script>
+                    (function () {
+                        'use strict'
+
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.querySelectorAll('.needs-validation')
+
+                        // Loop over them and prevent submission
+                        Array.prototype.slice.call(forms)
+                            .forEach(function (form) {
+                                form.addEventListener('submit', function (event) {
+                                    if (!form.checkValidity()) {
+                                        event.preventDefault()
+                                        event.stopPropagation()
+                                    }
+
+                                    form.classList.add('was-validated')
+                                }, false)
+                            })
+                    })()
+                </script>
+
+                <!-- Bootstrap Bundle with Popper -->
+                <script
+                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+                <!-- Axios -->
+                <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+                <script src="saveFormData.js"></script>
+                <script src="loadFormData.js"></script>
+                <script src="handelRegistrationForm.js"></script>
+            </div>
+        </section>
+        <!-- End Camp Content Card -->
+    </div>
+</body>

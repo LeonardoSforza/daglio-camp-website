@@ -1,0 +1,29 @@
+/* Web layout rooles */
+#web-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 84px;
+    margin-top: 50px;
+}
+
+#web-container>section {
+    position: relative;
+    padding-left: var(--huge, 64px);
+    padding-right: var(--huge, 64px);
+    width: 100%;
+    max-width: 1440px;
+}
+
+#web-container>section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background-color: inherit;
+    z-index: -1;
+}

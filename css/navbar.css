@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*,
+hr {
+    margin: 0;
+}
+
+nav {
+    border-bottom: 1px solid var(--Neutrals-lighter-grey, #ECEBEB);
+    background: var(--Neutrals-white, #FFF);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--small, 12px);
+
+    color: var(--Secondary-darkest, #3A5645);
+    text-align: center;
+
+    /* Bold/heading */
+    font-family: Nunito;
+    font-size: var(--Font-size-heading, 20px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--small, 12px);
+}
+
+.nav-link {
+    display: flex;
+    padding: var(--x-small, 8px) var(--medium, 16px);
+    justify-content: center;
+    align-items: center;
+
+    color: var(--Neutrals-black, #131212);
+
+    /* Bold/body-l */
+    font-family: Nunito;
+    font-size: var(--Font-size-body-l, 16px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nav-link-main {
+    display: flex;
+    padding: var(--x-small, 8px) var(--medium, 16px);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    border-radius: var(--medium, 8px);
+    background: var(--Primary-darkest, #CF6B00);
+
+    color: var(--Neutrals-white, #FFF);
+
+    /* Bold/body-l */
+    font-family: Nunito;
+    font-size: var(--Font-size-body-l, 16px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

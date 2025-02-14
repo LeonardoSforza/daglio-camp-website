@@ -1,0 +1,13 @@
+*,
+hr {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+body {
+    overflow-x: hidden;
+}
