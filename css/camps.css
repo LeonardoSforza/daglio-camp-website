@@ -111,6 +111,7 @@
     width: 100%;
     border: none;
     background: none;
+    padding: 0;
 
     color: var(--Neutrals-black, #131212);
     text-align: center;
@@ -188,4 +189,48 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+    #web-container>section#camp-info-section {
+        padding: 0;
+        flex-direction: column;
+        gap: var(--large, 24px);
+    }
+
+    #camp-info {
+        padding: 0px var(--large, 24px);
+        gap: var(--medium, 16px);
+    }
+
+    #camp-img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #camp-content-card {
+        padding: 0;
+        border-radius: var(--large, 24px);
+        gap: var(--small, 12px);
+    }
+
+    #camp-content-nav {
+        border-top-left-radius: var(--large, 24px);
+        border-top-right-radius: var(--large, 24px);
+        border: none;
+        border-bottom: 1px solid var(--Neutrals-lighter-grey, #ECEBEB);
+    }
+
+    #camp-content-nav button:first-child {
+        border-top-left-radius: var(--large, 24px);
+    }
+
+    #camp-content-nav button:last-child {
+        border-top-right-radius: var(--large, 24px);
+    }
+
+    #info-for-parents,
+    #info-for-volunteers {
+        padding: var(--large, 24px);
+    }
 }
