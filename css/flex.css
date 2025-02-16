@@ -43,3 +43,13 @@
 .gap-small {
     gap: var(--small, 12px);
 }
+
+.full-width {
+    width: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+    .gap-xxx-large {
+        gap: var(--x-large, 32px);
+    }
+}
