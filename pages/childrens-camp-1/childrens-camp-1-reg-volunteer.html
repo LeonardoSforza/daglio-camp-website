@@ -59,28 +59,35 @@
         <!-- Sub Navigation -->
         <section id="sub-navigation">
             <p>
-                <a href="childrens-camp-1.html#info-for-volunteers">Info for volunteers</a> / <a href="#">Register as volunteer</a>
+                <a href="childrens-camp-1.html#info-for-volunteers">Info for volunteers</a> / <a href="#">Register as
+                    volunteer</a>
             </p>
         </section>
         <!-- End Sub Navigation -->
         <!-- Registration Container -->
         <section id="registration-container">
             <!-- Event Card -->
-            <div class="event-tile">
-                <div class="event-tile-header">
-                    <span class="event-tile-date">30 July - 06 August</span>
-                    <div class="event-tile-background"></div>
-                </div>
-                <div class="event-tile-content">
-                    <div class="event-tile-title-section wrap">
-                        <h3 class="event-tile-title">Children's Camp</h3>
-                        <span class="tag event-tile-age-restriction">ages 8 - 17</span>
+            <div class="flex flex-column gap-x-large">
+                <div class="event-tile">
+                    <div class="event-tile-header">
+                        <span class="event-tile-date">30 July - 06 August</span>
+                        <div class="event-tile-background"></div>
                     </div>
-                    <p class="event-tile-body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="event-tile-content">
+                        <div class="event-tile-title-section wrap">
+                            <h3 class="event-tile-title">Children's Camp</h3>
+                            <span class="tag event-tile-age-restriction">ages 8 - 17</span>
+                        </div>
+                        <p class="event-tile-body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
                 </div>
+                <a href="./childrens-camp-1-reg.html">
+                    <button class="btn btn-secondary full-width">Register you child</button>
+                </a>
+
             </div>
             <!-- End Event Card -->
             <!-- Registration Card -->
@@ -90,8 +97,59 @@
                     class="needs-validation" novalidate="">
 
                     <section>
-                        <h2>Parent details</h2>
+                        <h3>Information for Volunteers</h3>
+                        <ul>
+                            <li>
+                                <p>All volunteers need to fill in the Nirmal Sevak Volunteer Application form from the
+                                    World Foundation, as well as the below registration form. Please write <strong>
+                                        DAGLIO in the
+                                        “reason why you want to be a volunteer”</strong> (in the Nirmal Sevak form).</p>
+                            </li>
+                            <li>
+                                <p>Adults/ Yuvas coming to the children camp will be required to provide the name and
+                                    <strong>email address of a national coordinator</strong> who can recommend them,
+                                    when filling in the
+                                    online registration form
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    It's better to know in advance who (parent, family or friend) will pay the camp
+                                    fee as you'll be asked to provide a name & address for invoicing purposes
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Please go to this page to see the admin you need to send us.
+                                </p>
+                            </li>
+                        </ul>
+                        <blockquote class="wp-embedded-content" data-secret="k6SoCzlIC4"><a
+                                href="https://nirmalsevak.org/?page_id=60049">Volunteer Application</a></blockquote>
+                        <iframe sandbox="allow-scripts" security="restricted"
+                            src="https://nirmalsevak.org/?page_id=60049&#038;embed=true#?secret=k6SoCzlIC4" width="600"
+                            height="400" title="&#8220;Volunteer Application&#8221; &#8212; Nirmal Sevak"
+                            data-secret="k6SoCzlIC4" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
+                            class="wp-embedded-content"></iframe>
+                        <script>
+                            /*! This file is auto-generated */
+                            !function (d, l) { "use strict"; l.querySelector && d.addEventListener && "undefined" != typeof URL && (d.wp = d.wp || {}, d.wp.receiveEmbedMessage || (d.wp.receiveEmbedMessage = function (e) { var t = e.data; if ((t || t.secret || t.message || t.value) && !/[^a-zA-Z0-9]/.test(t.secret)) { for (var s, r, n, a = l.querySelectorAll('iframe[data-secret="' + t.secret + '"]'), o = l.querySelectorAll('blockquote[data-secret="' + t.secret + '"]'), c = new RegExp("^https?:$", "i"), i = 0; i < o.length; i++)o[i].style.display = "none"; for (i = 0; i < a.length; i++)s = a[i], e.source === s.contentWindow && (s.removeAttribute("style"), "height" === t.message ? (1e3 < (r = parseInt(t.value, 10)) ? r = 1e3 : ~~r < 200 && (r = 200), s.height = r) : "link" === t.message && (r = new URL(s.getAttribute("src")), n = new URL(t.value), c.test(n.protocol)) && n.host === r.host && l.activeElement === s && (d.top.location.href = t.value)) } }, d.addEventListener("message", d.wp.receiveEmbedMessage, !1), l.addEventListener("DOMContentLoaded", function () { for (var e, t, s = l.querySelectorAll("iframe.wp-embedded-content"), r = 0; r < s.length; r++)(t = (e = s[r]).getAttribute("data-secret")) || (t = Math.random().toString(36).substring(2, 12), e.src += "#?secret=" + t, e.setAttribute("data-secret", t)), e.contentWindow.postMessage({ message: "ready", secret: t }, "*") }, !1))) }(window, document);
+                        </script>
+                    </section>
 
+                    <section>
+                        <h2>Your details</h2>
+
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="field">
+                                <label for="phone" class="form-label">Phone number (include country code)</label>
+                                <input id="phone" name="phone" type="tel" class="form-control">
+                            </div>
+                        </div>
                         <div class="form-row">
                             <div class="field">
                                 <label for="first_name" class="form-label">First Name (as on your ID or
@@ -258,15 +316,6 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="field-full">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h2>Child's details</h2>
-
                         <div class="form-row">
                             <div class="field">
                                 <label for="arrival_date_exception" class="form-label">Arrival date exception</label>
@@ -274,67 +323,61 @@
                                     <input class="form-check-input" type="checkbox" id="arrival_date_exception">
                                     <label class="form-check-label" for="gridCheck">I want to arrive at a different
                                         date</label>
-                                    <!-- If you click should show next input -->
                                 </div>
                             </div>
-                            <div class="field">
+                            <div class="field" id="alternate_arrival_date_field">
                                 <label for="arrival_date" class="form-label">Alternate arrival date</label>
-                                <input type="date" class="form-control" id="arrival_date" name="arrival_arrival_date"
-                                    required>
+                                <input type="date" class="form-control" id="arrival_date" name="arrival_arrival_date">
                             </div>
                         </div>
-                    </section>
-
-                    <!-- Departure date exception -->
-                    <div class="mb-3">
-                        <label for="departure_date_exception" class="form-label">Departure date exception</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="departure_date_exception">
-                            <label class="form-check-label" for="gridCheck">I want to leave at a different
-                                date</label>
-                            <!-- If you click should show next input -->
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="departure_date_exception" class="form-label">Departure date
+                                    exception</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="departure_date_exception">
+                                    <label class="form-check-label" for="gridCheck">I want to leave at a different
+                                        date</label>
+                                </div>
+                            </div>
+                            <div class="field" id="alternate_departure_date_field">
+                                <label for="departure_date" class="form-label">Alternate arrival date</label>
+                                <input type="date" class="form-control" id="departure_date" name="departure_date">
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="mb-3"> <!-- Should be hidden -->
-                        <label for="departure_date" class="form-label">Alternate arrival date</label>
-                        <input type="date" class="form-control" id="departure_date" name="departure_date" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="dietary_restrictions" class="form-label">Dietary needs and/or allergies</label>
-                        <input type="text" class="form-control" id="dietary_restrictions" name="dietary_restrictions">
-                        <p class="form-text">Food: We make sure the food on the camp is tasty and nutritious, with
-                            menus approved by an
-                            official nutritionist. If your child has major dietary requirements (which need
-                            ingredients not easily found
-                            in the area; or separate cooking effort) then we request the parents to work with the
-                            camp admins to find the
-                            best solution.</p>
-                        <p class="form-text">Health: Please list any recent health issues which could be of
-                            relevance.</p>
-                    </div>
-
-                    <div class="mb-3">
-                        <label>Have you ever joined a Daglio children camp before?</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="daglio_camp_before"
-                                id="daglio_camp_before_yes" value="yes">
-                            <label class="form-check-label" for="daglio_camp_before_yes">
-                                Yes
-                            </label>
+                        <div class="field full-width">
+                            <label for="dietary_restrictions" class="form-label">Dietary needs and/or allergies</label>
+                            <textarea class="form-control" id="dietary_restrictions"
+                                name="dietary_restrictions"></textarea>
+                            <p class="form-text">Food: We make sure the food on the camp is tasty and nutritious, with
+                                menus approved by an
+                                official nutritionist. If your child has major dietary requirements (which need
+                                ingredients not easily found
+                                in the area; or separate cooking effort) then we request the parents to work with the
+                                camp admins to find the
+                                best solution.</p>
+                            <p class="form-text">Health: Please list any recent health issues which could be of
+                                relevance.</p>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="daglio_camp_before"
-                                id="daglio_camp_before_no" value="no" checked>
-                            <label class="form-check-label" for="daglio_camp_before_no">
-                                No
-                            </label>
-                        </div>
-                    </div>
 
-                    <div class="mb-3">
-                        <div class="form-group">
+                        <div class="field">
+                            <label>Have you ever joined a Daglio children camp before?</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="daglio_camp_before"
+                                    id="daglio_camp_before_yes" value="yes">
+                                <label class="form-check-label" for="daglio_camp_before_yes">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="daglio_camp_before"
+                                    id="daglio_camp_before_no" value="no" checked>
+                                <label class="form-check-label" for="daglio_camp_before_no">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field full-width">
                             <label for="comments">Comments (for Children: any info on their background, character,
                                 special interests and
                                 talents etc.; for Volunteers: What are you going to do?)</label>
@@ -350,7 +393,93 @@
                                 environment for your child where they are nurtured and their wellbeing supported.
                             </p>
                         </div>
-                    </div>
+                    </section>
+
+                    <section>
+                        <h2>Other details</h2>
+
+                        <div class="form-row">
+                            <p class="form-text">
+                                Receipt info (needed to produce a receipt of your payment; if you are not sure who will
+                                pay,
+                                please give details
+                                of the most likely person; you can amend it later on by writing to info@dagliocamp.com)
+                            </p>
+                        </div>
+                        <div class="field full-width">
+                            <label for="" class="form-label big-text">Privacy information:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="privacy_information" required>
+                                <label class="form-check-label" for="privacy_information">
+                                    I have read the privacy policy and consent to the processing of the information
+                                    provided here, pursuant to
+                                    articles 13-14 of the EU Reg. 2016/679.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field full-width">
+                            <label for="" class="form-label big-text">Share contact details (optional)</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="share_contact_details">
+                                <label class="form-check-label" for="share_contact_details">
+                                    I agree that - after the camp - my name, country and email address can be shared
+                                    with other volunteers
+                                    attending the camp
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field full-width">
+                            <label for="" class="form-label big-text">Can your child swim</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="siwm">
+                                <label class="form-check-label" for="siwm">
+                                    Yes, my child can swim (don't check this box if they can't swim)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field full-width">
+                            <label for="" class="form-label big-text">Camping on the mountain (optional and only
+                                applicable to
+                                children age
+                                10+)</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="2_day_hike">
+                                <label class="form-check-label" for="2_day_hike">
+                                    In the event of a 2-day hike, I allow my child to sleep outside on the mountain
+                                    (tents are provided by the
+                                    camp) - if you don't select this checkbox, your child will not be allowed on the
+                                    2-day walk
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field full-width">
+                            <label for="" class="form-label big-text">View and share pictures after the camp
+                                (optional)</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="private_share_picture">
+                                <label class="form-check-label" for="private_share_picture">
+                                    I want to see pictures of the camp and I agree that pictures of my child (or myself
+                                    in case of volunteers)
+                                    can be shared privatly after the camp with volunteers and other parents of children
+                                    on the camp
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field full-width">
+                            <label for="" class="form-label big-text">Share pictures for promotional reasons on the
+                                daglio
+                                website (optional)</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="share_pictures">
+                                <label class="form-check-label" for="share_pictures">
+                                    I agree that pictures of my child (or myself in case of volunteers) can be used for
+                                    promotional reasons on
+                                    the daglio website
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+
 
                     <!-- <div class="mb-3">
                     <div class="form-group">
@@ -359,90 +488,20 @@
                     </div>
                 </div> -->
 
-                    <hr class="hr" />
-
-                    <p class="form-text">
-                        Receipt info (needed to produce a receipt of your payment; if you are not sure who will pay,
-                        please give details
-                        of the most likely person; you can amend it later on by writing to info@dagliocamp.com)
-                    </p>
-
-                    <div class="mb-3">
-                        <label for="" class="form-label">Privacy information:</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="privacy_information" required>
-                            <label class="form-check-label" for="privacy_information">
-                                I have read the privacy policy and consent to the processing of the information
-                                provided here, pursuant to
-                                articles 13-14 of the EU Reg. 2016/679.
-                            </label>
+                    <section>
+                        <div class="form-row">
+                            <p class="form-text">
+                                Please double check that all information you provided is correct before you click the
+                                submit button.
+                                If, for any reason, you need to make changes after submission this will only be possible
+                                by emailing registration@dagliocamp.com.
+                            </p>
                         </div>
-                    </div>
 
-                    <div class="mb-3">
-                        <label for="" class="form-label">Share contact details (optional)</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="share_contact_details">
-                            <label class="form-check-label" for="share_contact_details">
-                                I agree that - after the camp - my name, country and email address can be shared
-                                with other volunteers
-                                attending the camp
-                            </label>
-                        </div>
-                    </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </section>
 
-                    <div class="mb-3">
-                        <label for="" class="form-label">Can your child swim</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="siwm">
-                            <label class="form-check-label" for="siwm">
-                                Yes, my child can swim (don't check this box if they can't swim)
-                            </label>
-                        </div>
-                    </div>
 
-                    <div class="mb-3">
-                        <label for="" class="form-label">Camping on the mountain (optional and only applicable to
-                            children age
-                            10+)</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="2_day_hike">
-                            <label class="form-check-label" for="2_day_hike">
-                                In the event of a 2-day hike, I allow my child to sleep outside on the mountain
-                                (tents are provided by the
-                                camp) - if you don't select this checkbox, your child will not be allowed on the
-                                2-day walk
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="" class="form-label">View and share pictures after the camp (optional)</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="private_share_picture">
-                            <label class="form-check-label" for="private_share_picture">
-                                I want to see pictures of the camp and I agree that pictures of my child (or myself
-                                in case of volunteers)
-                                can be shared privatly after the camp with volunteers and other parents of children
-                                on the camp
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="" class="form-label">Share pictures for promotional reasons on the daglio
-                            website (optional)</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="share_pictures">
-                            <label class="form-check-label" for="share_pictures">
-                                I agree that pictures of my child (or myself in case of volunteers) can be used for
-                                promotional reasons on
-                                the daglio website
-                            </label>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
                 <div id="responseMessage"></div>
             </div>
@@ -479,6 +538,7 @@
         <script src="saveFormData.js"></script>
         <script src="loadFormData.js"></script>
         <script src="handelRegistrationForm.js"></script>
+        <script src="arrivalDateListener.js"></script>
         <!-- End Camp Content Card -->
         <!-- Footer -->
         <section id="footer">
