@@ -184,6 +184,7 @@ form section {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--medium, 16px);
+    width: 100%;
 }
 
 form section .form-row {
@@ -202,6 +203,10 @@ form section .field {
     /* max-width: 50%; */
 }
 
+form section .field.full-width {
+    width: 100%;
+}
+
 form section .form-text {
     font-size: 11px;
 }
@@ -216,6 +221,17 @@ form section .field-full {
     align-items: flex-start;
     gap: var(--x-small, 8px);
     width: 100%;
+}
+
+form .form-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--x-small, 8px);
+}
+
+form .form-check-input {
+    padding: 0;
 }
 
 form section label {
