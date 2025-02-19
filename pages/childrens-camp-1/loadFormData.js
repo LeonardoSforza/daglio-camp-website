@@ -13,6 +13,7 @@ function loadFormData() {
         document.getElementById('country_residence').value = formData.country_of_residence || '';
         document.getElementById('place_of_birth').value = formData.place_of_birth || '';
         document.getElementById('email').value = formData.email || '';
+        document.getElementById('phone').value = formData.phone || '';
         document.getElementById('arrival_date').value = formData.alternative_arival_date || '';
         document.getElementById('departure_date').value = formData.alternative_departure_date || '';
         document.getElementById('dietary_restrictions').value = formData.dietary_restrictions || '';

@@ -8,6 +8,7 @@ function saveFormData() {
         country_of_residence: document.getElementById('country_residence').value,
         place_of_birth: document.getElementById('place_of_birth').value,
         email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
         alternative_arival_date: document.getElementById('arrival_date').value,
         alternative_departure_date: document.getElementById('departure_date').value,
         dietary_restrictions: document.getElementById('dietary_restrictions').value,
