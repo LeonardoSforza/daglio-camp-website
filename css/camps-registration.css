@@ -22,6 +22,7 @@
 #registration-container {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: var(--xxx-large, 48px);
     padding-bottom: var(--huge, 64px);
 }
@@ -29,7 +30,8 @@
 /* Event Tile */
 .event-tile {
     display: flex;
-    width: 405.333px;
+    width: 100%;
+    max-width: 405.333px;
     height: fit-content;
     padding: var(--large, 24px);
     flex-direction: column;
@@ -143,6 +145,7 @@
     align-items: flex-start;
     gap: var(--xx-large, 40px);
     flex: 1 0 0;
+    min-width: 500px;
 
     border-radius: var(--large, 24px);
     border: 1px solid var(--Neutrals-lighter-grey, #ECEBEB);
@@ -150,7 +153,7 @@
     box-shadow: -5px 8px 11.6px 0px rgba(74, 74, 74, 0.10);
 }
 
-#registration-card h1 {
+h1 {
     color: var(--Neutrals-black, #131212);
 
     /* Bold/heading-l */
@@ -255,4 +258,105 @@ form section input {
     padding: var(--x-small, 8px) var(--small, 12px);
     align-items: center;
     gap: 10px;
+}
+
+.mobile-display {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #registration-container {
+        flex-direction: column;
+    }
+
+    .event-tile-content p {
+        display: none;
+    }
+
+    .mobile-display {
+        display: block;
+    }
+
+    h1 {
+        color: var(--Secondary-darkest, #3A5645);
+
+        /* Bold/heading-m */
+        font-family: Nunito;
+        font-size: var(--Font-size-heading-m, 24px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .event-tile-background {
+        height: 84px;
+        flex-shrink: 0;
+        align-self: stretch;
+    }
+
+    .event-tile-date {
+        display: none;
+    }
+
+    .event-tile {
+        flex-direction: row;
+        gap: var(--small, 12px);
+        padding: var(--medium, 16px);
+    }
+
+    .event-tile-header {
+        width: 110px;
+    }
+
+    .event-title-date {
+        color: var(--Neutrals-black, #131212);
+        text-align: left;
+
+        /* Bold/body */
+        font-family: Nunito;
+        font-size: var(--Font-size-body, 14px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .event-tile-title {
+        color: var(--Neutrals-black, #131212);
+
+        /* Bold/body-l */
+        font-family: Nunito;
+        font-size: var(--Font-size-body-l, 16px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .event-tile-age-restriction {
+        color: var(--Neutrals-black, #131212);
+
+        /* Medium/body */
+        font-family: Nunito;
+        font-size: var(--Font-size-body, 14px);
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    #registration-card {
+        min-width: 0;
+        gap: var(--medium, 16px);
+        padding: 0;
+        border-radius: 0;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+
+    form section > div {
+        flex-wrap: wrap;
+    }
+
+    form section .field {
+        width: 100%;
+    }
 }
