@@ -343,7 +343,7 @@ form section input {
     }
 
     #registration-card {
-        min-width: none;
+        min-width: 0;
         gap: var(--medium, 16px);
         padding: 0;
         border-radius: 0;
