@@ -203,6 +203,7 @@ section#events h2 {
 
     border-radius: var(--x-large, 100px);
     background: var(--Neutrals-lighter-grey, #ECEBEB);
+    white-space: nowrap;
 }
 
 .event-tile-body-text {
