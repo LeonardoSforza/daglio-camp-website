@@ -135,7 +135,7 @@
                     </section>
 
                     <section>
-                        <h2>Childe's details</h2>
+                        <h2>Child's details</h2>
 
                         <!-- Attending as - Child -->
                         <!-- Camp Should be hard-coded -->
@@ -388,18 +388,226 @@
                     </section>
 
                     <section>
-                        <h2>Parent's details</h2>
-
+                        <h2>Parent or legal guardian details</h2>
                         <div class="form-row">
                             <div class="field">
                                 <label for="email" class="form-label">Email address</label>
                                 <input type="email" class="form-control" id="email" name="email" required>
                             </div>
+                        </div>
+                        <div class="form-row">
                             <div class="field">
-                                <label for="phone" class="form-label">Phone number (include country code)</label>
+                                <label for="parent_birth_date" class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="parent_birth_date" name="parent_birth_date"
+                                    required>
+                            </div>
+                            <div class="field">
+                                <label for="parent_country_birth" class="form-label">Country of birth</label>
+                                <select class="form-select" id="parent_country_birth" name="camp" required>
+                                    <option value="Albania" data-calc-value="Albania">
+                                        Albania </option>
+                                    <option value="Andorra" data-calc-value="Andorra">
+                                        Andorra </option>
+                                    <option value="Argentina" data-calc-value="Argentina">
+                                        Argentina </option>
+                                    <option value="Australia" data-calc-value="Australia">
+                                        Australia </option>
+                                    <option value="Austria" data-calc-value="Austria">
+                                        Austria </option>
+                                    <option value="Belarus" data-calc-value="Belarus">
+                                        Belarus </option>
+                                    <option value="Belgium" data-calc-value="Belgium">
+                                        Belgium </option>
+                                    <option value="Bolivia" data-calc-value="Bolivia">
+                                        Bolivia </option>
+                                    <option value="Brazil" data-calc-value="Brazil">
+                                        Brazil </option>
+                                    <option value="Bulgaria" data-calc-value="Bulgaria">
+                                        Bulgaria </option>
+                                    <option value="Canada" data-calc-value="Canada">
+                                        Canada </option>
+                                    <option value="China" data-calc-value="China">
+                                        China </option>
+                                    <option value="Columbia" data-calc-value="Columbia">
+                                        Columbia </option>
+                                    <option value="Croatia" data-calc-value="Croatia">
+                                        Croatia </option>
+                                    <option value="Cyprus" data-calc-value="Cyprus">
+                                        Cyprus </option>
+                                    <option value="Czechia" data-calc-value="Czechia">
+                                        Czechia </option>
+                                    <option value="Denmark" data-calc-value="Denmark">
+                                        Denmark </option>
+                                    <option value="Egypt" data-calc-value="Egypt">
+                                        Egypt </option>
+                                    <option value="Estonia" data-calc-value="Estonia">
+                                        Estonia </option>
+                                    <option value="Finland" data-calc-value="Finland">
+                                        Finland </option>
+                                    <option value="France" data-calc-value="France">
+                                        France </option>
+                                    <option value="Germany" data-calc-value="Germany">
+                                        Germany </option>
+                                    <option value="Greece" data-calc-value="Greece">
+                                        Greece </option>
+                                    <option value="Hong Kong" data-calc-value="Hong Kong">
+                                        Hong Kong </option>
+                                    <option value="Hungary" data-calc-value="Hungary">
+                                        Hungary </option>
+                                    <option value="Iceland" data-calc-value="Iceland">
+                                        Iceland </option>
+                                    <option value="India" data-calc-value="India">
+                                        India </option>
+                                    <option value="Iran" data-calc-value="Iran">
+                                        Iran </option>
+                                    <option value="Ireland" data-calc-value="Ireland">
+                                        Ireland </option>
+                                    <option value="Israel" data-calc-value="Israel">
+                                        Israel </option>
+                                    <option value="Italy" data-calc-value="Italy">
+                                        Italy </option>
+                                    <option value="Japan" data-calc-value="Japan">
+                                        Japan </option>
+                                    <option value="Korea, South" data-calc-value="Korea, South">
+                                        Korea, South </option>
+                                    <option value="Lithuania" data-calc-value="Lithuania">
+                                        Lithuania </option>
+                                    <option value="Luxembourg" data-calc-value="Luxembourg">
+                                        Luxembourg </option>
+                                    <option value="Malaysia" data-calc-value="Malaysia">
+                                        Malaysia </option>
+                                    <option value="Nepal" data-calc-value="Nepal">
+                                        Nepal </option>
+                                    <option value="Netherlands" data-calc-value="Netherlands">
+                                        Netherlands </option>
+                                    <option value="Norway" data-calc-value="Norway">
+                                        Norway </option>
+                                    <option value="Poland" data-calc-value="Poland">
+                                        Poland </option>
+                                    <option value="Portugal" data-calc-value="Portugal">
+                                        Portugal </option>
+                                    <option value="Romania" data-calc-value="Romania">
+                                        Romania </option>
+                                    <option value="Russia" data-calc-value="Russia">
+                                        Russia </option>
+                                    <option value="Serbia" data-calc-value="Serbia">
+                                        Serbia </option>
+                                    <option value="Slovakia" data-calc-value="Slovakia">
+                                        Slovakia </option>
+                                    <option value="Slovenia" data-calc-value="Slovenia">
+                                        Slovenia </option>
+                                    <option value="South Africa" data-calc-value="South Africa">
+                                        South Africa </option>
+                                    <option value="Spain" data-calc-value="Spain">
+                                        Spain </option>
+                                    <option value="Sweden" data-calc-value="Sweden">
+                                        Sweden </option>
+                                    <option value="Switzerland" data-calc-value="Switzerland">
+                                        Switzerland </option>
+                                    <option value="Taiwan" data-calc-value="Taiwan">
+                                        Taiwan </option>
+                                    <option value="Turkey" data-calc-value="Turkey">
+                                        Turkey </option>
+                                    <option value="Ukraine" data-calc-value="Ukraine">
+                                        Ukraine </option>
+                                    <option value="UK-England" data-calc-value="UK-England">
+                                        UK-England </option>
+                                    <option value="UK-Northern Ireland" data-calc-value="UK-Northern Ireland">
+                                        UK-Northern Ireland </option>
+                                    <option value="UK-Scotland" data-calc-value="UK-Scotland">
+                                        UK-Scotland </option>
+                                    <option value="UK-Wales" data-calc-value="UK-Wales">
+                                        UK-Wales </option>
+                                    <option value="USA" data-calc-value="USA">
+                                        USA </option>
+                                    <option value="Other (please specify in Comments)"
+                                        data-calc-value="Other (please specify in Comments)">
+                                        Other (please specify in Comments) </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="parent_first_name" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="parent_first_name" name="parent_first_name"
+                                    required>
+                            </div>
+                            <div class="field">
+                                <label for="parent_last_name" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="parent_last_name" name="parent_last_name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="address" class="form-label">Address: street and house number</label>
+                                <input type="text" class="form-control" id="address" name="address" required>
+                            </div>
+                            <div class="field">
+                                <label for="city" class="form-label">City (and State if applicable)</label>
+                                <input type="text" class="form-control" id="city" name="city" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="postcode" class="form-label">Postcode</label>
+                                <input type="text" class="form-control" id="postcode" name="postcode" required>
+                            </div>
+                            <div class="field">
+                                <label for="country" class="form-label">Country</label>
+                                <input type="text" class="form-control" id="country" name="country" required>
+                            </div>
+                        </div>
+
+                        <h3>Second Parent or guardian</h3>
+                        <p>(if unable to provide details of second parent/guardian, please write 0)</p>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="parent_other_first_name" class="form-label">First Name of second
+                                    parent</label>
+                                <input type="text" class="form-control" id="parent_other_first_name"
+                                    name="parent_other_first_name" required>
+                            </div>
+                            <div class="field">
+                                <label for="parent_other_last_name" class="form-label">Last Name of second
+                                    parent</label>
+                                <input type="text" class="form-control" id="parent_other_last_name"
+                                    name="parent_other_last_name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="parent_other_place_date" class="form-label">Place of birth (format: City, Country)</label>
+                                <input type="text" class="form-control" id="parent_other_place_date"
+                                    name="parent_other_place_date" required>
+                            </div>
+                        </div>
+
+                        <h3>Phone number of both parents</h3>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="father_phone" class="form-label">Phone number of father</label>
+                                <input id="father_phone" name="father_phone" type="tel" class="form-control" required>
+                                <p class="form-text">
+                                    Enter 0 in case the mother doesn't have a mobile phone number
+                                </p>
+                            </div>
+                            <div class="field">
+                                <label for="mother_phone" class="form-label">Phone number of mother</label>
+                                <input id="mother_phone" name="mother_phone" type="tel" class="form-control" required>
+                                <p class="form-text">
+                                    Enter 0 in case the father doesn't have a mobile phone number
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="phone" class="form-label">Other numbers (landline or any other emergency
+                                    number)</label>
                                 <input id="phone" name="phone" type="tel" class="form-control">
-                                <!-- 
-                                <input type="tel" id="phone" name="phone" required> -->
+                                <p class="form-text">
+                                    Enter 0 in case the father doesn't have a mobile phone number
+                                </p>
                             </div>
                         </div>
                     </section>
@@ -484,6 +692,46 @@
                                     I agree that pictures of my child (or myself in case of volunteers) can be used for
                                     promotional reasons on
                                     the daglio website
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field full-width">
+                            <label for="" class="form-label big-text">Website information:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="website_information" required>
+                                <label class="form-check-label" for="website_information">
+                                    I have read the information on the www.dagliocamp.com website and will comply with
+                                    the points made there
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field full-width">
+                            <label for="" class="form-label big-text">My child practices sahaja yoga:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="website_information" required>
+                                <label class="form-check-label" for="website_information">
+                                    My child practices Sahaja Yoga meditation and treatments regularly and of his/her
+                                    own free will
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field full-width">
+                            <label for="" class="form-label big-text">Camp rules:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="website_information" required>
+                                <label class="form-check-label" for="website_information">
+                                    I have explained my child that he/she must comply with the rules of the camp as laid
+                                    down by the coordinators
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field full-width">
+                            <label for="" class="form-label big-text">Check for lice:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="website_information" required>
+                                <label class="form-check-label" for="website_information">
+                                    I will check my child for lice the week before the camp to make sure he or she
+                                    doesn't cary them.
                                 </label>
                             </div>
                         </div>

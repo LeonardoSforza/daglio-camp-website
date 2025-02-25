@@ -176,6 +176,18 @@ h1 {
     line-height: normal;
 }
 
+#registration-card h3 {
+    color: var(--Neutrals-black, #131212);
+    margin-top: 20px;
+
+    /* Bold/heading-m */
+    font-family: Nunito;
+    font-size: var(--Font-size-heading-m, 20px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 form {
     display: flex;
     flex-direction: column;
